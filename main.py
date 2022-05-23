@@ -10,14 +10,20 @@ import random
 rounds = 0
 bet_amount = 0
 start = True
-roll = random.randint(1, 100)
+
+
+def rollHit():
+    return random.randint(1, 100)
+def rollDmg():
+    return random.randint(1, 20)
+
 
 
 while start:
-    roll = random.randint(1, 100)
     print("Round Start!")
-    print(roll)
-    if roll < 10:
-        print("ending rounds")
+    rounds += 1
+
+    if rounds == 5:
+        print("And that's the Match!")
         break
     continue
