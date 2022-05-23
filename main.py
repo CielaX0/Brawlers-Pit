@@ -11,13 +11,7 @@ rounds = 0
 bet_amount = 0
 start = True
 
-
-def rollHit():
-    return random.randint(1, 100)
-def rollDmg():
-    return random.randint(1, 20)
-
-
+# Player must choose 1 of the 2 fighters; check if compare choice roll to bot roll
 
 while start:
     print("Round Start!")
